@@ -50,6 +50,14 @@ npm run build:examples   # builds the canonical 7-event chain
 npm run verify           # validates schema + chain + 3 invariants
 ```
 
+## Reference implementation
+
+A full end-to-end Node.js reference implementation lives at [**matter-decision-record-audit-stream-reference**](https://github.com/mizcausevic-dev/matter-decision-record-audit-stream-reference). It runs the canonical 7-step matter trajectory through an attorney-client vault contract, emits Suite-compliant hash-chained events, and re-validates against this spec's JSON Schema + **all three invariants simultaneously** in CI. Green CI there is evidence the three invariants are mutually achievable end-to-end, not just individually checkable.
+
+The second of two reference impls in the Suite (the [first](https://github.com/mizcausevic-dev/fhir-resource-access-audit-reference) covered HealthTech's `fhir-resource-access-audit`) — together they're evidence the parallel-structure thesis works in code.
+
+License: AGPL-3.0 (this spec is MIT; reference implementations are AGPL-3.0).
+
 ## Composes with
 
 - [`attorney-client-data-vault-contract-profile`](https://github.com/mizcausevic-dev/attorney-client-data-vault-contract-profile) — the Decision Card vault contract whose `privilege_tier` taxonomy drives `resource.privilege_tier` on this stream
