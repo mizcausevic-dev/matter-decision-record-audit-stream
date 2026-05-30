@@ -1,0 +1,42 @@
+{
+  "event_id": "0190lt-0004",
+  "timestamp": "2026-09-12T15:30:00Z",
+  "kind": "legaltech.matter.brief-draft-generated",
+  "source": "anchor-reef-mattermind-prod",
+  "matter_ref": {
+    "scheme": "matter-id-tokenized",
+    "value": "tok_matter_AR2026_0042"
+  },
+  "resource": {
+    "type": "draft-brief",
+    "id_tokenized": "tok_resource_brief_d4",
+    "privilege_tier": "work-product"
+  },
+  "action": "generate",
+  "outcome": {
+    "status": "success",
+    "recommendation": "draft-only"
+  },
+  "agent": {
+    "ai_tool_card_url": "https://vendorl-mattermind.example/.well-known/ai-tool-cards/mattermind-4.x.json",
+    "ai_decision_card_url": "https://anchor-reef.example/.well-known/decisions/AR-DEC-2026-MATTER-0042.json",
+    "supervising_attorney_bar_id_tokenized": "tok_bar_4f9c2e",
+    "supervising_attorney_jurisdiction": "NY",
+    "session_principal_tokenized": "tok_principal_9a01"
+  },
+  "regulatory_basis": [
+    "aba-rule-1-1-comment-8",
+    "aba-rule-5-3-non-lawyer-supervision"
+  ],
+  "conflict_check": {
+    "passed_at": "2026-09-12T14:00:00Z",
+    "engagement_letter_url": "https://anchor-reef.example/.well-known/engagement-letters/AR-ENG-2026-MATTER-0042.json",
+    "conflicts_cleared": [
+      "tok_party_op_xx12",
+      "tok_party_op_yy44"
+    ]
+  },
+  "decision_card_ref": "https://anchor-reef.example/.well-known/decisions/AR-DEC-2026-MATTER-0042.json",
+  "prev_hash": "c9bbb21655518eb42a9dcd71e6961a5ca741b178f34ab1dc82f509a9be7bfca2",
+  "hash": "f452fb2219c3a24b571682dad632356bc04c2c231ed80e6d3f145e456de12603"
+}

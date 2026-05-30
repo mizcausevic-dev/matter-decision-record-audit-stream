@@ -1,0 +1,41 @@
+{
+  "event_id": "0190lt-0005",
+  "timestamp": "2026-09-12T15:34:00Z",
+  "kind": "legaltech.matter.citation-validated",
+  "source": "anchor-reef-mattermind-prod",
+  "matter_ref": {
+    "scheme": "matter-id-tokenized",
+    "value": "tok_matter_AR2026_0042"
+  },
+  "resource": {
+    "type": "draft-brief",
+    "id_tokenized": "tok_resource_brief_d4",
+    "privilege_tier": "work-product"
+  },
+  "action": "transform",
+  "outcome": {
+    "status": "success",
+    "recommendation": "supervisor-review-required"
+  },
+  "agent": {
+    "ai_tool_card_url": "https://vendorl-mattermind.example/.well-known/ai-tool-cards/mattermind-4.x.json",
+    "ai_decision_card_url": "https://anchor-reef.example/.well-known/decisions/AR-DEC-2026-MATTER-0042.json",
+    "supervising_attorney_bar_id_tokenized": "tok_bar_4f9c2e",
+    "supervising_attorney_jurisdiction": "NY",
+    "session_principal_tokenized": "tok_principal_9a01"
+  },
+  "regulatory_basis": [
+    "aba-rule-3-3-candor-toward-tribunal"
+  ],
+  "conflict_check": {
+    "passed_at": "2026-09-12T14:00:00Z",
+    "engagement_letter_url": "https://anchor-reef.example/.well-known/engagement-letters/AR-ENG-2026-MATTER-0042.json",
+    "conflicts_cleared": [
+      "tok_party_op_xx12",
+      "tok_party_op_yy44"
+    ]
+  },
+  "decision_card_ref": "https://anchor-reef.example/.well-known/decisions/AR-DEC-2026-MATTER-0042.json",
+  "prev_hash": "f452fb2219c3a24b571682dad632356bc04c2c231ed80e6d3f145e456de12603",
+  "hash": "0e8fd7608a33c6babee3382edfbee0a41b287dcac148a6daf9bff27ed1586b4e"
+}

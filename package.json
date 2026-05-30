@@ -1,0 +1,16 @@
+{
+  "name": "matter-decision-record-audit-stream",
+  "version": "0.1.0",
+  "description": "LegalTech audit-stream Operator: per-matter privileged decision-record events hash-chained for ABA Model Rule 1.1 Comment 8 + 1.6 + 3.3 + 5.3 + state-bar formal-opinion + attorney-client privilege + work-product doctrine evidence. Every event carries explicit privilege_tier.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:examples": "node src/build-examples.mjs",
+    "verify": "node src/verify.mjs examples/anchor-reef-mattermind-2026q3-stream.ndjson",
+    "test": "npm run build:examples && npm run verify"
+  },
+  "dependencies": {
+    "ajv": "^8.17.0",
+    "ajv-formats": "^3.0.1"
+  }
+}

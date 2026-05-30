@@ -1,0 +1,52 @@
+{
+  "event_id": "0190lt-0001",
+  "timestamp": "2026-09-12T14:05:00Z",
+  "kind": "legaltech.matter.intake-document-read",
+  "source": "anchor-reef-mattermind-prod",
+  "matter_ref": {
+    "scheme": "matter-id-tokenized",
+    "value": "tok_matter_AR2026_0042"
+  },
+  "resource": {
+    "type": "matter-intake-form",
+    "id_tokenized": "tok_resource_intake_a1",
+    "privilege_tier": "privileged"
+  },
+  "action": "read",
+  "outcome": {
+    "status": "success",
+    "recommendation": "no-recommendation"
+  },
+  "agent": {
+    "ai_tool_card_url": "https://vendorl-mattermind.example/.well-known/ai-tool-cards/mattermind-4.x.json",
+    "ai_decision_card_url": "https://anchor-reef.example/.well-known/decisions/AR-DEC-2026-MATTER-0042.json",
+    "supervising_attorney_bar_id_tokenized": "tok_bar_4f9c2e",
+    "supervising_attorney_jurisdiction": "NY",
+    "session_principal_tokenized": "tok_principal_9a01"
+  },
+  "regulatory_basis": [
+    "aba-rule-1-6",
+    "engagement-letter-binding"
+  ],
+  "conflict_check": {
+    "passed_at": "2026-09-12T14:00:00Z",
+    "engagement_letter_url": "https://anchor-reef.example/.well-known/engagement-letters/AR-ENG-2026-MATTER-0042.json",
+    "conflicts_cleared": [
+      "tok_party_op_xx12",
+      "tok_party_op_yy44"
+    ]
+  },
+  "decision_card_ref": "https://anchor-reef.example/.well-known/decisions/AR-DEC-2026-MATTER-0042.json",
+  "redaction_applied": [
+    {
+      "field": "client-name",
+      "action": "tokenize"
+    },
+    {
+      "field": "opposing-party-name",
+      "action": "tokenize"
+    }
+  ],
+  "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "hash": "58d844b4e8708110f9c104d6b83b80e2c8da9d9681674ddf24c38e7b85c708fa"
+}
